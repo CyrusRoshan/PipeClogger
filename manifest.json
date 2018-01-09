@@ -1,17 +1,18 @@
 {
-  "manifest_version": 2,
-  "name": "Pipe Clogger",
-  "description": "The internet is a series of tubes. Let's slow the flow of data to distracting websites",
-  "version": "0.0.1",
+	"manifest_version": 2,
+	"name": "Pipe Clogger",
+	"description": "The internet is a series of tubes. Let's slow the flow of data to distracting websites",
+	"version": "0.0.1",
 
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+	"permissions": ["storage", "webRequest", "webRequestBlocking", "<all_urls>"],
 
-  "browser_action": {
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
 
-  },
-
-  "background": {
-    "scripts": ["utils.js", "proxy.js"],
-    "persistent": true
-  }
+	"background": {
+		"scripts": ["utils.js", "proxy.js"],
+		"persistent": true
+	}
 }

@@ -5,7 +5,13 @@ function syncWait(ms) {
     while (elapsedTime < ms) {
         elapsedTime = Date.now() - start;
     }
-    console.log(elapsedTime, 'elapsed');
 
     return;
+}
+
+function getOptions(callback) {
+    chrome.storage.sync.get({
+        cloggedURLS: `*://*.facebook.com/*, *://*.fbcdn.net/, *://*.reddit.com/, *://*.redditmedia.com/`,
+        cloggedTime: 2000,
+    }, callback)
 }
