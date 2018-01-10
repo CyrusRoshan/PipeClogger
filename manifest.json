@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Pipe Clogger",
-	"description": "The internet is a series of tubes. Let's slow the flow of data to distracting websites",
+	"description": "The internet is a series of tubes. Pipe clogger slows the flow of data from distracting websites",
 	"version": "0.0.1",
 	
 	"icons": {
