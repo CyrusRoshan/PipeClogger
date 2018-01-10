@@ -3,8 +3,20 @@
 	"name": "Pipe Clogger",
 	"description": "The internet is a series of tubes. Let's slow the flow of data to distracting websites",
 	"version": "0.0.1",
+	
+	"icons": {
+		"128": "icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "icon128.png"
+	},
 
-	"permissions": ["storage", "webRequest", "webRequestBlocking", "<all_urls>"],
+	"permissions": [
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
 
 	"options_ui": {
 		"page": "options.html",
