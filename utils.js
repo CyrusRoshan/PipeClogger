@@ -11,7 +11,7 @@ function syncWait(ms) {
 
 function getOptions(callback) {
     chrome.storage.sync.get({
-        cloggedURLS: `*://*.facebook.com/*, *://*.fbcdn.net/, *://*.reddit.com/*, *://*.redditmedia.com/*`,
+        cloggedURLS: `*://*.facebook.com/*, *://*.fbcdn.net/*, *://*.reddit.com/*, *://*.redditmedia.com/*`,
         cloggedTime: 2000,
     }, callback)
 }
